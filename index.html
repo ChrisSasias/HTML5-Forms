@@ -24,46 +24,46 @@
            
               <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-5">
-              <label for="validationCustom01" class="form-label"><b>Card#</b></label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="XXXXXXXXXXXXXXX" required>
+              <label for="validationCustom00" class="form-label"><b>Card#</b></label>
+              <input type="number" class="form-control" id="validationCustom00" placeholder="XXXX-XXXX-XXXX-XXXX" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-3">
               <label for="validationCustom02" class="form-label"><b>cvc#</b></label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="0000" required>
+              <input type="number" maxlength="3" required class="form-control" id="validationCustom02" placeholder="000" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label"><b>Amount</b></label>
+              <label for="validationAmount" class="form-label"><b>Amount</b></label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="inputGroupPrepend"><b>$</b></span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <input type="number" class="form-control" id="validationAmount" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
                   Please choose a username.
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-                <label for="validationCustom01" class="form-label"><b>First Name</b></label>
-                <input type="text" class="form-control" id="validationCustom01"  required>
+                <label for="validationFirstName" class="form-label"><b>First Name</b></label>
+                <input type="text" class="form-control" id="validationFirstName"  required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-6">
-                <label for="validationCustom01" class="form-label"><b>Last Name</b></label>
-                <input type="text" class="form-control" id="validationCustom01"  required>
+                <label for="validationLastName" class="form-label"><b>Last Name</b></label>
+                <input type="text" class="form-control" id="validationLastName"  required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
             <div class="col-md-6">
-              <label for="validationCustom03" class="form-label"><b>City</b></label>
-              <input type="text" class="form-control" id="validationCustom03" required>
+              <label for="validationCity" class="form-label"><b>City</b></label>
+              <input type="text" class="form-control" id="validationCity" required>
               <div class="invalid-feedback">
                 Please provide a valid city.
               </div>
@@ -79,8 +79,8 @@
               </div>
             </div>
             <div class="col-md-3">
-              <label for="validationCustom05" class="form-label"><b>Postal Code</b></label>
-              <input type="text" class="form-control" id="validationCustom05" required>
+              <label for="validationPostalCode" class="form-label"><b>Postal Code</b></label>
+              <input type="number" maxlength="10" class="form-control" id="validationPostalCode" required>
               <div class="invalid-feedback">
                 Please provide a valid postal code.
               </div>
@@ -171,6 +171,5 @@
       
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </body>
 </html>
