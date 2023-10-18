@@ -25,14 +25,14 @@
               <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-5">
               <label for="validationCustom00" class="form-label"><b>Card#</b></label>
-              <input type="number" class="form-control" id="validationCustom00" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+              <input type="number" class="form-control" id="cardNumberInput" placeholder="XXXX-XXXX-XXXX-XXXX" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-3">
               <label for="validationCustom02" class="form-label"><b>cvc#</b></label>
-              <input type="number" maxlength="3" required class="form-control" id="validationCustom02" placeholder="000" required>
+              <input type="number" maxlength="3" required class="form-control" id="cvcInput" placeholder="000" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -41,7 +41,7 @@
               <label for="validationAmount" class="form-label"><b>Amount</b></label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="inputGroupPrepend"><b>$</b></span>
-                <input type="number" class="form-control" id="validationAmount" aria-describedby="inputGroupPrepend" required>
+                <input type="number" class="form-control" id="amountInput" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
                   Please choose a username.
                 </div>
@@ -49,28 +49,28 @@
             </div>
             <div class="col-md-6">
                 <label for="validationFirstName" class="form-label"><b>First Name</b></label>
-                <input type="text" class="form-control" id="validationFirstName"  required>
+                <input type="text" class="form-control" id="firstNameInput"  required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-6">
                 <label for="validationLastName" class="form-label"><b>Last Name</b></label>
-                <input type="text" class="form-control" id="validationLastName"  required>
+                <input type="text" class="form-control" id="lastNameInput"  required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
             <div class="col-md-6">
               <label for="validationCity" class="form-label"><b>City</b></label>
-              <input type="text" class="form-control" id="validationCity" required>
+              <input type="text" class="form-control" id="cityInput" required>
               <div class="invalid-feedback">
                 Please provide a valid city.
               </div>
             </div>
             <div class="col-md-3">
               <label for="validationCustom04" class="form-label"><b>State</b></label>
-              <select class="form-select" id="validationCustom04" required>
+              <select class="form-select" id="stateSelect" required>
                 <option selected disabled value="">Pick a state </option>
                 <option>...</option>
               </select>
@@ -80,7 +80,7 @@
             </div>
             <div class="col-md-3">
               <label for="validationPostalCode" class="form-label"><b>Postal Code</b></label>
-              <input type="number" maxlength="10" class="form-control" id="validationPostalCode" required>
+              <input type="number" maxlength="10" class="form-control" id="postalCodeInput" required>
               <div class="invalid-feedback">
                 Please provide a valid postal code.
               </div>
@@ -103,25 +103,25 @@
                 <div class="metododepago col-6">
                   <div class="row color">
                       <div class="form-check col m-1">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="mastercardRadio" value="option1" checked>
                       <label class="form-check-label" for="exampleRadios1">
                         <i class="fa-brands fa-cc-mastercard"></i>
                       </label>
                     </div>
                     <div class="form-check col m-1">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="dinersClubRadio" value="option2">
                       <label class="form-check-label" for="exampleRadios2">
                         <i class="fa-brands fa-cc-diners-club"></i>
                       </label>
                     </div>
                     <div class="form-check col m-1">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="visaRadio" value="option3" checked>
                       <label class="form-check-label" for="exampleRadios3">
                         <i class="fa-brands fa-cc-visa"></i>
                       </label>
                     </div>
                     <div class="form-check col m-1">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="amexRadio" value="option4">
                       <label class="form-check-label" for="exampleRadios4">
                         <i class="fa-brands fa-cc-amex"></i>
                       </label>
@@ -130,7 +130,7 @@
            
                 </div>
                   <!-- metodo de pago -->
-                  <!-- textarea -->
+                  <!-- notesTextarea -->
                   <div class="col">                
                       <div class="input-group" style="height: 100px; ">
                       <textarea class="form-control" aria-label="With textarea"></textarea>
@@ -156,9 +156,9 @@
             <div class="mt-3 card-footer">
               <div class="d-flex flex-row-reverse align-items-center" >
                 <!-- send -->
-                <div class="left-cab col-1">
+                <div class="sendButtonContainer col-1">
                   <button class="btn btn-primary " type="submit">Send</button>
-                </div>
+                </div> 
                 <!-- send -->
                 <!-- cancel -->
                 <div class="col-1">
